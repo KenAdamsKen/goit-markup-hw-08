@@ -1,0 +1,111 @@
+/*  Акуент цвет  #2196F3*/
+/* Цвет белый #FFFFFF */
+/* Цвет второстепенного текста #212121; */
+/* основной цвет текста #757575; */
+/* цвет адреса color: rgba(255, 255, 255, 0.6); */
+
+:root {
+    --primary-text-color: #757575;
+    --accent-color: #2196F3;
+    --secondary-title-text: #212121;
+    --color-white: #ffffff;
+    --adress-color: rgba(255, 255, 255, 0.6);
+}
+
+body {
+    color: var(--primary-text-color);
+}
+
+/* Лого */
+
+.logo span {
+    color: var(--accent-color);
+}
+
+.logo {
+    color: #000000;
+}
+
+/* Навигация */
+.nav {
+    width: 1600px;
+    height: 80px;
+    background: #FFFFFF;
+}
+
+.nav-item {
+    color: var(--secondary-title-text);
+}
+
+.nav-item:hover,
+.nav-item:focus {
+    color: var(--accent-color);
+}
+
+.adress-nav {
+    color: var(--primary-text-color);
+}
+
+.adress-item {
+    color: var(--primary-text-color);
+}
+
+.adress-item:hover,
+.adress-item:focus {
+    color: var(--accent-color);
+}
+
+/* Hero */
+
+.hero {
+    width: 1600px;
+    height: 600px;
+    background-color: #2F303A;
+}
+
+.hero-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
+    /* or 136% */
+
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-white);
+}
+
+.section-title {
+    color: var(--secondary-title-text);
+}
+
+.significant-title {
+    color: var(--secondary-title-text);
+}
+
+.team-title {
+    color: var(--secondary-title-text);
+}
+
+.footer {
+    width: 1600px;
+    height: 252px;
+    background: #2F303A;
+}
+
+.footer .logo {
+    color: var(--color-white);
+}
+
+.footer-item {
+    color: var(--color-white);
+}
+
+.footer-list .contakt {
+    color: var(--adress-color);
+}
