@@ -62,7 +62,6 @@ body {
 /* Hero */
 
 .hero {
-
     background-color: #2F303A;
 }
 
@@ -127,4 +126,5 @@ h1 {
 .cards-group h1 {
     color: var(--secondary-title-text);
 }
+
 
