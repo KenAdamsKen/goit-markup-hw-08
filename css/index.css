@@ -3,6 +3,7 @@
 /* Цвет второстепенного текста #212121; */
 /* основной цвет текста #757575; */
 /* цвет адреса color: rgba(255, 255, 255, 0.6); */
+/* цвет кнопок портфолио #F5F4FA; */
 
 :root {
     --primary-text-color: #757575;
@@ -10,6 +11,7 @@
     --secondary-title-text: #212121;
     --color-white: #ffffff;
     --adress-color: rgba(255, 255, 255, 0.6);
+    --portfolio-btn-color: #F5F4FA;
 }
 
 body {
@@ -28,8 +30,6 @@ body {
 
 /* Навигация */
 .nav {
-    width: 1600px;
-    height: 80px;
     background: #FFFFFF;
 }
 
@@ -55,28 +55,18 @@ body {
     color: var(--accent-color);
 }
 
+.nav .nav-item.current {
+    color: var(--accent-color);
+}
+
 /* Hero */
 
 .hero {
-    width: 1600px;
-    height: 600px;
+
     background-color: #2F303A;
 }
 
 .hero-title {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 60px;
-    margin: 0 auto;
-    text-align: center;
-    vertical-align: middle;
-    /* or 136% */
-
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
     color: var(--color-white);
 }
 
@@ -109,3 +99,32 @@ body {
 .footer-list .contakt {
     color: var(--adress-color);
 }
+
+/*=========================================== Вторая страничка Портфолио ========================================*/
+
+h1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    /* identical to box height, or 200% */
+
+    letter-spacing: 0.06em;
+}
+
+.btn-group .btn {
+    background-color: var(--portfolio-btn-color);
+    color: var(--secondary-title-text);
+}
+
+.btn-group .btn:hover,
+.btn-group .btn:focus {
+    background-color: var(--accent-color);
+    color: var(--color-white);
+}
+
+.cards-group h1 {
+    color: var(--secondary-title-text);
+}
+
