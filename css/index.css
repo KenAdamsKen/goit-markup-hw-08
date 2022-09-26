@@ -18,27 +18,67 @@ body {
     color: var(--primary-text-color);
 }
 
+.header-logo {
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+.header {
+    width: 1600px;
+    min-height: 80px;
+    background-color: var(--color-white);
+}
+
+
 /* Лого */
 
-.logo span {
+.header-logo span,
+.footer-logo span {
     color: var(--accent-color);
 }
 
-.logo {
+.header-logo,
+.footer-logo {
     color: #000000;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
 }
 
 /* Навигация */
-.nav {
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.header-item {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+/* .header-list {
     background: #FFFFFF;
-}
+} */
 
-.nav-item {
+.header-link,
+.adress-nav {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
     color: var(--secondary-title-text);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 
-.nav-item:hover,
-.nav-item:focus {
+.header-link:hover,
+.header-link:focus {
     color: var(--accent-color);
 }
 
@@ -46,16 +86,16 @@ body {
     color: var(--primary-text-color);
 }
 
-.adress-item {
+.adress-link {
     color: var(--primary-text-color);
 }
 
-.adress-item:hover,
-.adress-item:focus {
+.adress-link:hover,
+.adress-link:focus {
     color: var(--accent-color);
 }
 
-.nav .nav-item.current {
+.header-list .link.current {
     color: var(--accent-color);
 }
 
@@ -63,22 +103,105 @@ body {
 
 .hero {
     background-color: #2F303A;
+    min-width: 1600px;
+    height: 600px;
 }
 
 .hero-title {
+    width: 696px;
+    height: 120px;
     color: var(--color-white);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 200px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.hero-btn {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    margin: 40px auto 0;
+    letter-spacing: 0.06em;
+    width: 216px;
+    height: 50px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-style: none;
+    color: var(--color-white)
+    
 }
 
 .section-title {
     color: var(--secondary-title-text);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding-top: 94px;
+
 }
 
 .significant-title {
     color: var(--secondary-title-text);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+}
+.significant-list {
+    width: 270px;
+    height: 74px;
+
+}
+
+
+.significant-title p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.team-item {
+    width: 270px;
+    height: 368px;
+    text-align: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
     color: var(--secondary-title-text);
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.team-title p {
+    color: var(--primary-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
 }
 
 .footer {
@@ -87,7 +210,7 @@ body {
     background: #2F303A;
 }
 
-.footer .logo {
+.footer-logo {
     color: var(--color-white);
 }
 
@@ -106,7 +229,7 @@ h1 {
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
-    line-height: 36px;
+    line-height: 2;
     /* identical to box height, or 200% */
 
     letter-spacing: 0.06em;
