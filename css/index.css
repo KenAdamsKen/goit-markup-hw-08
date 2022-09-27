@@ -67,7 +67,6 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     color: var(--secondary-title-text);
-    font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -175,7 +174,6 @@ body {
 
 .significant .sign-subtxt {
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -201,7 +199,6 @@ body {
 
 .team-subtxt {
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
@@ -266,7 +263,6 @@ body {
 
 .portfolio-subtxt {
     font-family: 'Roboto';
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
@@ -278,4 +274,12 @@ body {
     height: 404px;
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
+}
+
+.footer-list {
+    font-style: normal;
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
 }
