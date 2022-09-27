@@ -279,6 +279,7 @@ body {
 .footer-list {
     font-style: normal;
     font-family: 'Roboto';
+    font-weight:  400px;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
