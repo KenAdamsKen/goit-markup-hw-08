@@ -229,7 +229,7 @@ body {
 .btn-group .btn {
     background-color: var(--portfolio-btn-color);
     color: var(--secondary-title-text);
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -252,7 +252,7 @@ body {
 }
 
 .portfolio-txt {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -262,7 +262,7 @@ body {
 }
 
 .portfolio-subtxt {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
@@ -278,7 +278,7 @@ body {
 
 .footer-list {
     font-style: normal;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-weight:  400px;
     font-size: 14px;
     line-height: 1.71;
