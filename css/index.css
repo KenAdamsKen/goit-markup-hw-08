@@ -193,7 +193,6 @@ body {
     font-family: var(--font-family);
     font-weight: var(--font-500);
     color: var(--secondary-title-text);
-    font-size: 16px;
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
@@ -201,7 +200,6 @@ body {
 
 .team-subtxt {
     font-family: var(--font-family);
-    font-size: 16px;
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
@@ -233,7 +231,6 @@ body {
     color: var(--secondary-title-text);
     font-family: var(--font-family);
     font-weight: var(--font-500);
-    font-size: 16px;
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
@@ -267,7 +264,6 @@ body {
 
 .portfolio-subtxt {
     font-family: var(--font-family);
-    font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
