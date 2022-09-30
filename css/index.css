@@ -12,13 +12,12 @@
     --color-white: #ffffff;
     --adress-color: rgba(255, 255, 255, 0.6);
     --portfolio-btn-color: #F5F4FA;
-    --font-family: 'Roboto', sans-serif;
-    --font-500: 500; 
+
 }
 
 body {
     color: var(--primary-text-color);
-    font-family: var(--font-family);
+    font-family: 'Roboto', sans-serif;
 }
 
 .header {
@@ -56,8 +55,7 @@ body {
 }
 
 .header-item {
-    font-family: var(--font-family);
-    font-weight: var(--font-500);
+    font-weight: 500;
 }
 
 /* .header-list {
@@ -66,8 +64,7 @@ body {
 
 .header-link,
 .adress-nav {
-    font-family: var(--font-family);
-    font-weight: var(--font-500);
+    font-weight: 500;
     color: var(--secondary-title-text);
     font-size: 14px;
     line-height: 1.14;
@@ -110,7 +107,6 @@ body {
     width: 696px;
     height: 120px;
     color: var(--color-white);
-    font-family: var(--font-family);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -123,7 +119,7 @@ body {
 
 .hero-btn {
     display: block;
-    font-family: var(--font-family);
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.875;
@@ -148,7 +144,6 @@ body {
 
 .section-title {
     color: var(--secondary-title-text);
-    font-family: var(--font-family);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -160,7 +155,6 @@ body {
 
 .significant-title {
     color: var(--secondary-title-text);
-    font-family: var(--font-family);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -175,7 +169,6 @@ body {
 }
 
 .significant .sign-subtxt {
-    font-family: var(--font-family);
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -190,8 +183,7 @@ body {
 }
 
 .team-title {
-    font-family: var(--font-family);
-    font-weight: var(--font-500);
+    font-weight: 500;
     color: var(--secondary-title-text);
     line-height: 1.18;
     text-align: center;
@@ -199,7 +191,6 @@ body {
 }
 
 .team-subtxt {
-    font-family: var(--font-family);
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
@@ -229,8 +220,8 @@ body {
 .btn-group .btn {
     background-color: var(--portfolio-btn-color);
     color: var(--secondary-title-text);
-    font-family: var(--font-family);
-    font-weight: var(--font-500);
+    font-family: inherit;
+    font-weight: 500;
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
@@ -253,8 +244,6 @@ body {
 }
 
 .portfolio-txt {
-    font-family: var(--font-family);
-    font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -263,7 +252,6 @@ body {
 }
 
 .portfolio-subtxt {
-    font-family: var(--font-family);
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
@@ -278,7 +266,6 @@ body {
 
 .footer-list {
     font-style: normal;
-    font-family: var(--font-family);
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
