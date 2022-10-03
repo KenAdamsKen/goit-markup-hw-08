@@ -99,7 +99,6 @@ h2, h3, p {
     letter-spacing: 0.03em;
 
     color: #000000;
-
 }
 
 /* Навигация */
@@ -179,7 +178,6 @@ h2, h3, p {
     text-transform: uppercase;
 
     color: var(--color-white);
-
 }
 
 .hero-btn {
@@ -198,7 +196,6 @@ h2, h3, p {
 
     color: var(--color-white);
     background: #2196F3;
-
 }
 
 .hero-wrapper {
@@ -227,8 +224,6 @@ h2, h3, p {
     letter-spacing: 0.03em;
 
     color: var(--secondary-title-text);
-
-
 }
 
 .section.made {
@@ -262,7 +257,6 @@ h2, h3, p {
     text-transform: uppercase;
 
     color: var(--secondary-title-text);
-
 }
 
 .significant .sign-subtxt {
@@ -329,7 +323,6 @@ h2, h3, p {
     padding-top: 60px;
 
     color: var(--color-white);
-
 }
 
 .footer-list {
@@ -399,7 +392,6 @@ h2, h3, p {
 
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .portfolio-cards > .portfolio-list {
@@ -407,9 +399,7 @@ h2, h3, p {
     margin-left: var(--portf-list-gap);
 
     flex-basis: calc(100% / 3 - var(--portf-list-gap));
-
 }
-
 
 .btn-list:not(:last-child) {
     margin-right: 8px;
@@ -441,7 +431,6 @@ h2, h3, p {
 .portfolio-list {
     background: #FFFFFF;
 }
-
 
 .footer-list {
     font-style: normal;
