@@ -12,7 +12,7 @@
     --color-white: #ffffff;
     --adress-color: rgba(255, 255, 255, 0.6);
     --portfolio-btn-color: #F5F4FA;
-    --portf-list-gap: 15px;
+    --portf-list-gap: 30px;
 }
 
 .visually-hidden {
@@ -71,7 +71,6 @@ h2, h3, p {
 
 .header-wrapper {
     display: flex;
-    justify-content: space-around;
     align-items: center;
 }
 
@@ -89,7 +88,7 @@ h2, h3, p {
 
 .header-logo,
 .footer-logo {
-    display: block;
+    display: inline-block;
     margin-right: 94px;
 
     font-family: 'Raleway', sans-serif;
@@ -140,6 +139,7 @@ h2, h3, p {
 .adress-nav {
     color: var(--primary-text-color);
     display: flex;
+    margin-left: auto;
 }
 
 .adress-item:not(:first-child) {
@@ -164,12 +164,14 @@ h2, h3, p {
 .hero {
     background-color: #2F303A;
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero-title {
     margin: 0 auto;
     margin-bottom: 30px;
-    width: 696px;
+    max-width: 696px;
 
     font-weight: 900;
     font-size: 44px;
@@ -198,11 +200,6 @@ h2, h3, p {
     background: #2196F3;
 }
 
-.hero-wrapper {
-    padding-top: 200px;
-    padding-bottom: 200px;
-}
-
 .hero-btn:hover, 
 .hero-btn:focus {
     background: #188CE8;
@@ -211,6 +208,7 @@ h2, h3, p {
 
 .section {
     padding: 94px 0;
+
 }
 
 .section-title {
@@ -232,18 +230,16 @@ h2, h3, p {
 
 .made-list {
     display: flex;
-}
-
-.made-item:not(:last-child) {
-    margin-right: 30px;
+    gap: 30px;
 }
 
 .significant {
     display: flex;
+    gap: 30px;
 }
 
-.significant-list:not(:last-child) {
-    margin-right: 30px;
+.significant-list {
+    flex-basis: calc(100% - 90px / 4);
 }
 
 .significant-title {
@@ -272,6 +268,7 @@ h2, h3, p {
 
 .team-list {
     display: flex;
+    gap: 30px;
 }
 
 .team-item {
@@ -279,10 +276,6 @@ h2, h3, p {
     text-align: center;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-}
-
-.team-item:not(:last-child) {
-    margin-right: 30px;
 }
 
 .team-img {
@@ -314,19 +307,21 @@ h2, h3, p {
 }
 
 .footer {
+    padding-bottom: 60px;
+    padding-top: 60px;
+    
     background: #2F303A;
 }
 
 .footer-logo {
     margin: 0;
     margin-bottom: 20px;
-    padding-top: 60px;
 
     color: var(--color-white);
 }
 
 .footer-list {
-    padding-bottom: 60px;
+    
 }
 
 .footer-link {
@@ -344,8 +339,8 @@ h2, h3, p {
 
 /*=========================================== Вторая страничка Портфолио ========================================*/
 
-.container.portfolio-div {
-    margin-bottom: 94px;
+.portfolio {
+    padding: 94px 0;
 }
 
 .btn-group .btn {
@@ -379,11 +374,11 @@ h2, h3, p {
 }
 
 .btn-group {
-    margin-top: 94px;
     margin-bottom: 50px;
 
     display: flex;
     justify-content: center;
+    gap: 8px;
 }
 
 .portfolio-cards {
@@ -401,15 +396,10 @@ h2, h3, p {
     flex-basis: calc(100% / 3 - var(--portf-list-gap));
 }
 
-.btn-list:not(:last-child) {
-    margin-right: 8px;
-}
-
 .portfolio-content {
     padding: 20px 24px;
-    border-left: 1px solid #EEEEEE;
-    border-right: 1px solid #EEEEEE;
-    border-bottom: 1px solid #EEEEEE;
+    border: 1px solid #EEEEEE;
+    border-top: none;
 }
 
 .portfolio-txt {
