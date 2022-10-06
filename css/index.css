@@ -13,6 +13,7 @@
     --adress-color: rgba(255, 255, 255, 0.6);
     --portfolio-btn-color: #F5F4FA;
     --portf-list-gap: 30px;
+    --social-link-color: #AFB1B8;
 }
 
 .visually-hidden {
@@ -59,9 +60,10 @@ img {
     height: auto;
 }
 
-h2, h3, p {
+h2, h3, p, ul, a {
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
 .header {
@@ -133,7 +135,9 @@ h2, h3, p {
 .footer-link.contakt:hover, 
 .footer-link.contakt:focus,
 .footer-link:hover, 
-.footer-link:focus {
+.footer-link:focus,
+.adress-link:hover, 
+.adress-link:focus {
     color: var(--accent-color);
 }
 
@@ -145,23 +149,28 @@ h2, h3, p {
     margin-left: auto;
 }
 
+.icon-adress {
+    margin-right: 10px;
+    vertical-align: middle;
+    fill: currentColor;
+}
+
+.icon-post {
+    height: 12px;
+    width: 16px;
+}
+
+.icon-phone {
+    width: 10px;
+    height: 16px;
+}
+
 .adress-item:not(:first-child) {
     margin-left: 50px;
 }
 
 .adress-link {
     color: var(--primary-text-color);
-}
-
-.adress-link::before {
-    content: '';
-    height: 20px;
-    width: 20px;
-}
-
-.adress-link:hover,
-.adress-link:focus {
-    color: var(--accent-color);
 }
 
 .header-list .link.current {
@@ -346,12 +355,46 @@ h2, h3, p {
 .team-subtxt {
     margin-top: 0;
     margin-bottom: 0;
-    padding-bottom: 30px;
+    margin-bottom: 16px;
 
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+}
+
+.team-social {
+    display: flex;
+    padding: 0 32px 30px;
+    justify-content: space-between;
+}
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    vertical-align:auto;
+
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+    background-position: center;
+}
+
+.social-link {
+    color: var(--social-link-color);
+}
+
+.social-link:hover {
+    color: var(--color-white);
+    background-color: var(--accent-color)
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
 }
 
 .footer {
