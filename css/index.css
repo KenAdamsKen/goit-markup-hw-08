@@ -267,33 +267,14 @@ h2, h3, p, ul, a {
     gap: 30px;
 }
 
-.significant-list::before {
-    content: '';
-    display: block;
-    height: 120px;
-    margin-bottom: 30px;
-
-    background-size: 70px;
-    background-repeat: no-repeat;
-    background-position: center;
+.thumb.icon-significant {
+    display: flex;
     background-color: var(--portfolio-btn-color);
+    justify-content: center;
+    margin-bottom: 30px;
+    height: 120px;
 }
 
-.icon-satelit::before {
-    background-image: url('../img/satelit.svg');
-}
-
-.icon-clock::before {
-    background-image: url('../img/clock.svg');
-}
-
-.icon-stats::before {
-    background-image: url('../img/stats.svg');
-}
-
-.icon-astronaut::before {
-    background-image: url('../img/astronaut.svg');
-}
 
 .significant-list {
     flex-basis: calc(100% - 90px / 4);
@@ -314,6 +295,7 @@ h2, h3, p, ul, a {
 
 .significant .sign-subtxt {
     margin: 0;
+
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -329,8 +311,6 @@ h2, h3, p, ul, a {
 }
 
 .team-item {
-
-    text-align: center;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
@@ -346,20 +326,21 @@ h2, h3, p, ul, a {
 
     font-size: 16px;
     font-weight: 500;
-    color: var(--secondary-title-text);
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
+
+    color: var(--secondary-title-text);
 }
 
 .team-subtxt {
     margin-top: 0;
-    margin-bottom: 0;
     margin-bottom: 16px;
 
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
+
     color: var(--primary-text-color);
 }
 
@@ -373,27 +354,69 @@ h2, h3, p, ul, a {
     display: flex;
     justify-content: center;
     align-items:center;
-    vertical-align:auto;
 
     width: 44px;
     height: 44px;
 
     border-radius: 50%;
     background-position: center;
-}
 
-.social-link {
     color: var(--social-link-color);
+
 }
 
-.social-link:hover {
+.social-link:hover, 
+.social-link:focus {
     color: var(--color-white);
     background-color: var(--accent-color)
 }
 
 .icon {
-    width: 20px;
-    height: 20px;
+    fill: currentColor;
+}
+
+/* Фирмы */
+
+.firms-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.firms-item {
+    padding: 16px 32px;
+
+    border: 1px solid var(--social-link-color);
+    border-radius: 4px;
+  
+    width: 170px;
+    height: 92px;
+}
+
+.firms-item:hover .firms-link,
+.firms-item:focus .firms-link,
+.firms-item:hover, 
+.firms-item:focus {
+    border-color: var(--accent-color);
+    cursor: pointer;
+    color: var(--accent-color);;
+}
+
+.thumb-firms {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 106px;
+    height: 60px;
+}
+
+.firms-link {
+    color: var(--social-link-color)
+}
+
+.firms-icon {
     fill: currentColor;
 }
 
@@ -409,10 +432,6 @@ h2, h3, p, ul, a {
     margin-bottom: 20px;
 
     color: var(--color-white);
-}
-
-.footer-list {
-    
 }
 
 .footer-link {
@@ -462,6 +481,8 @@ h2, h3, p, ul, a {
     background-color: var(--accent-color);
     color: var(--color-white);
     cursor: pointer;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+border-radius: 4px;
 }
 
 .btn-group {
@@ -513,9 +534,53 @@ h2, h3, p, ul, a {
     background: #FFFFFF;
 }
 
+.portfolio-list:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .footer-list {
     font-style: normal;
     font-size: 14px;
     line-height: 1.5;
     letter-spacing: 0.03em;
+}
+
+
+.footer-social {
+    display: inline-flex;
+    gap: 10px;
+}
+
+.footer-wrapper {
+    display: flex;
+}
+
+.join-footer {
+    display: flex;
+    flex-direction: column;
+    margin-left:  70px;
+}
+
+.join-title {
+    padding-top: 12px;
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--color-white)
+}
+
+.item-footer > .join-link {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: var(--color-white);
+
+}
+
+.join-link:hover  {
+    background-color: var(--accent-color);
 }

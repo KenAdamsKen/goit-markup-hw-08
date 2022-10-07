@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="uk">
 
 <head>
     <meta charset="UTF-8">
@@ -33,10 +33,21 @@
             </nav>
 
             <ul class="adress-nav list">
-                <li class="adress-item"><a href="mailto:info@devstudio.com"
-                        class="adress-link link">info@devstudio.com</a>
+                <li class="adress-item">
+                    <a href="mailto:info@devstudio.com" class="adress-link link">
+                        <svg class="icon-post icon-adress">
+                            <use href="./img/sprite.svg#icon-post"></use>
+                        </svg>
+                        info@devstudio.com</a>
                 </li>
-                <li class="adress-item"><a href="tel:+380961111111" class="adress-link link">+38 096 111 11 11</a></li>
+
+                <li class="adress-item">
+                    <a href="tel:+380961111111" class="adress-link link">
+                        <svg class="icon-phone icon-adress">
+                            <use href="./img/sprite.svg#icon-phone"></use>
+                        </svg>
+                        +38 096 111 11 11</a>
+                </li>
             </ul>
         </div>
     </header>
@@ -61,7 +72,7 @@
                 <div class="container portfolio-div">
                     <ul class="portfolio-cards  list">
                         <li class="portfolio-list">
-                            <a href="#" class="link">
+                            <a href="#" class="link hover-link">
                                 <div class="img-thumb">
                                     <img src="./img/hw2/techcrack.jpg" alt="tech skills" width="370">
                                 </div>
@@ -72,7 +83,7 @@
                             </a>
                         </li>
                         <li class="portfolio-list">
-                            <a href="#" class="link">
+                            <a href="#" class="link hover-link">
                                 <div class="img-thumb">
                                     <img src="./img/hw2/basketball.jpg" alt="basketball foto" width="370">
                                 </div>
@@ -83,7 +94,7 @@
                             </a>
                         </li>
                         <li class="portfolio-list">
-                            <a href="#" class="link">
+                            <a href="#" class="link hover-link">
                                 <div class="img-thumb">
                                     <img src="./img/hw2/seafood.jpg" alt="seefoot logo" width="370">
                                 </div>
@@ -94,7 +105,7 @@
                             </a>
                         </li>
                         <li class="portfolio-list">
-                            <a href="#" class="link">
+                            <a href="#" class="link hover-link">
                                 <div class="img-thumb">
                                     <img src="./img/hw2/headsset.jpg" alt="headsset" width="370">
                                 </div>
@@ -105,7 +116,7 @@
                             </a>
                         </li>
                         <li class="portfolio-list">
-                            <a href="#" class="link">
+                            <a href="#" class="link hover-link">
                                 <div class="img-thumb">
                                     <img src="./img/hw2/boxes.jpg" alt="boxes" width="370">
                                 </div>
@@ -116,7 +127,7 @@
                             </a>
                         </li>
                         <li class="portfolio-list">
-                            <a href="#" class="link">
+                            <a href="#" class="link hover-link">
                                 <div class="img-thumb">
                                     <img src="./img/hw2/monitor.jpg" alt="monitor" width="370">
                                 </div>
@@ -127,7 +138,7 @@
                             </a>
                         </li>
                         <li class="portfolio-list">
-                            <a href="#" class="link">
+                            <a href="#" class="link hover-link">
                                 <div class="img-thumb">
                                     <img src="./img/hw2/book.jpg" alt="opened book" width="370">
                                 </div>
@@ -138,7 +149,7 @@
                             </a>
                         </li>
                         <li class="portfolio-list">
-                            <a href="#" class="link">
+                            <a href="#" class="link hover-link">
                                 <div class="img-thumb">
                                     <img src="./img/hw2/labproject.jpg" alt="project lab" width="370">
                                 </div>
@@ -149,7 +160,7 @@
                             </a>
                         </li>
                         <li class="portfolio-list">
-                            <a href="#" class="link">
+                            <a href="#" class="link hover-link">
                                 <div class="img-thumb">
                                     <img src="./img/hw2/notebook.jpg" alt="notebook" width="370">
                                 </div>
@@ -170,22 +181,69 @@
 
     <footer class="footer">
         <div class="container">
-            <a href="./index.html" class="footer-logo link"><span>Web</span>Studio</a>
-            <!-- Адрес -->
-            <address>
-                <ul class="footer-list list">
-                    <li class="footer-item"><a href="https://goo.gl/maps/QorF1nrM5F7cBjs38" target="_blank"
-                            rel="noopener noreferrer nofollow" class="footer-link link">м.
-                            Київ,
-                            пр-т Лесі Українки, 26</a></li>
-                    <li class="footer-item"><a href="mailto:info@devstudio.com"
-                            class="footer-link contakt link">info@devstudio.com</a>
-                    </li>
-                    <li class="footer-item"><a href="tel:+380961111111" class="footer-link contakt link">+38 096 111 11
-                            11</a>
-                    </li>
-                </ul>
-            </address>
+            <div class="footer-wrapper">
+                <div class="footer-adress">
+                    <a href="./index.html" class="footer-logo link"><span>Web</span>Studio</a>
+
+                    <!-- Адрес -->
+                    <address>
+                        <ul class="footer-list list">
+                            <li class="footer-item"><a href="https://goo.gl/maps/QorF1nrM5F7cBjs38" target="_blank"
+                                    rel="noopener noreferrer nofollow" class="footer-link link">м.
+                                    Київ,
+                                    пр-т Лесі Українки, 26</a></li>
+                            <li class="footer-item"><a href="mailto:info@devstudio.com"
+                                    class="footer-link contakt link">info@devstudio.com</a>
+                            </li>
+                            <li class="footer-item"><a href="tel:+380961111111" class="footer-link contakt link">+38 096
+                                    111
+                                    11
+                                    11</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+
+                <div class="join-footer">
+                    <strong class="join-title">приєднуйтесь</strong>
+                    <ul class="footer-social list">
+                        <li class="social item-footer">
+                            <a href="#" class="social-link join-link" target="_blank"
+                                rel="noreferrer noopener nofollow">
+                                <svg class="icon-instagram icon" width="20" height="20">
+                                    <use href="./img/sprite.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social item-footer">
+                            <a href="#" class="social-link join-link" target="_blank"
+                                rel="noreferrer noopener nofollow">
+                                <svg class="icon-twitter icon" width="16.25" height="16.25px">
+                                    <use href="./img/sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social item-footer">
+                            <a href="#" class="social-link join-link" target="_blank"
+                                rel="noreferrer noopener nofollow">
+                                <svg class="icon-facebook icon" width="10" height="
+								20px">
+                                    <use href="./img/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social item-footer">
+                            <a href="#" class="social-link join-link" target="_blank"
+                                rel="noreferrer noopener nofollow">
+                                <svg class="icon-linkedin icon" width="20" height="20px">
+                                    <use href="./img/sprite.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
         </div>
     </footer>
 
