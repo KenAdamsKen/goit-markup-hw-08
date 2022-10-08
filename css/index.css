@@ -313,6 +313,9 @@ h2, h3, p, ul, a {
 .team-item {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+
+    background: var(--color-white);
+
 }
 
 .team-img {
@@ -397,22 +400,30 @@ h2, h3, p, ul, a {
 .firms-item:hover .firms-link,
 .firms-item:focus .firms-link,
 .firms-item:hover, 
-.firms-item:focus {
+.firms-item:focus,
+.firms-link:focus,
+.firms-link:hover {
     border-color: var(--accent-color);
     cursor: pointer;
-    color: var(--accent-color);;
+    color: var(--accent-color);
 }
 
-.thumb-firms {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+.firms-link:focus {
+    color: var(--accent-color);
 
-    width: 106px;
-    height: 60px;
+}
+
+.thumb-firms:focus {
+    color: var(--accent-color);
 }
 
 .firms-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
     color: var(--social-link-color)
 }
 
@@ -534,7 +545,12 @@ border-radius: 4px;
     background: #FFFFFF;
 }
 
-.portfolio-list:hover {
+.hover-link {
+    display: block;
+}
+
+.hover-link:hover,
+.hover-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -581,6 +597,7 @@ border-radius: 4px;
 
 }
 
-.join-link:hover  {
+.join-link:hover, 
+.join-link:focus  {
     background-color: var(--accent-color);
 }
