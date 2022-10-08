@@ -388,8 +388,6 @@ h2, h3, p, ul, a {
 }
 
 .firms-item {
-    padding: 16px 32px;
-
     border: 1px solid var(--social-link-color);
     border-radius: 4px;
   
@@ -399,21 +397,10 @@ h2, h3, p, ul, a {
 
 .firms-item:hover .firms-link,
 .firms-item:focus .firms-link,
-.firms-item:hover, 
 .firms-item:focus,
-.firms-link:focus,
-.firms-link:hover {
+.firms-item:hover {
     border-color: var(--accent-color);
     cursor: pointer;
-    color: var(--accent-color);
-}
-
-.firms-link:focus {
-    color: var(--accent-color);
-
-}
-
-.thumb-firms:focus {
     color: var(--accent-color);
 }
 
@@ -427,9 +414,9 @@ h2, h3, p, ul, a {
     color: var(--social-link-color)
 }
 
-.firms-icon {
+/* .firms-icon {
     fill: currentColor;
-}
+} */
 
 .footer {
     padding-bottom: 60px;
