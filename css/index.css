@@ -67,6 +67,11 @@ h2, h3, p, ul, a {
 }
 
 .header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+
     background-color: var(--color-white);
     border-bottom: 1px solid #ECECEC;
 
