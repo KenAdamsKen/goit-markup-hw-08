@@ -645,6 +645,7 @@ h2, h3, p, ul, a {
 
 .footer-wrapper {
     display: flex;
+    align-items: baseline;
 }
 
 .join-footer {
@@ -654,7 +655,6 @@ h2, h3, p, ul, a {
 }
 
 .join-title {
-    padding-top: 12px;
     margin-bottom: 10px;
 
     font-weight: 700;
