@@ -387,7 +387,7 @@
 				</div>
 
 				<div class="join-footer">
-					<strong class="join-title">приєднуйтесь</strong>
+					<b class="join-title">приєднуйтесь</b>
 					<ul class="footer-social list">
 						<li class="social item-footer">
 							<a href="#" class="social-link join-link" target="_blank"
@@ -425,7 +425,17 @@
 					</ul>
 
 				</div>
+				<form class="mail-wrapper">
+					<div class="mail-footer">
+						<label for="mail-footer" class="mail-title">Підпишіться на розсилку</label>
+						<input type="email" name="mail-footer" id="mail-footer" placeholder="Email" class="mail-input">
+					</div>
+					<button type="submit" class="mail-btn">Підписатися</button>
+
+				</form>
+
 			</div>
+
 		</div>
 	</footer>
 
@@ -447,21 +457,36 @@
 						<label for="name" class="form-label">
 							Ім'я
 						</label>
-						<input type="name" name="name" id="name">
+						<div class="input-wrapper">
+							<input type="name" name="name" id="name" class="name-form input">
+							<svg class="name-svg" width="12" height="12">
+								<use href="./img/sprite2.svg#icon-nameform"></use>
+							</svg>
+						</div>
 					</div>
 
 					<div class="form-field">
 						<label for="tel" class="form-label">
 							Телефон
 						</label>
-						<input type="tel" name="tel" id="tel">
+						<div class="input-wrapper">
+							<input type="tel" name="tel" id="tel" class="name-form input">
+							<svg class="name-svg" width="13" height="13">
+								<use href="./img/sprite2.svg#icon-telefonform"></use>
+							</svg>
+						</div>
 					</div>
 
 					<div class="form-field">
 						<label for="email" class="form-label">
 							Пошта
 						</label>
-						<input type="email" name="email" id="email">
+						<div class="input-wrapper">
+							<input type="email" name="email" id="email" class="name-form input">
+							<svg class="name-svg" width="15" height="12">
+								<use href="./img/sprite2.svg#icon-mailform"></use>
+							</svg>
+						</div>
 					</div>
 
 					<div class="form-field">
