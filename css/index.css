@@ -776,7 +776,6 @@ h2, h3, p, ul, a {
     min-width: 528px;
     min-height: 581px;
     padding: 40px 40px;
-
     
     background-color: var(--color-white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -798,6 +797,7 @@ h2, h3, p, ul, a {
     height: 30px;
     border-radius: 50%;
 
+    background-color: var(--color-white);
     border: 1px solid rgba(0, 0, 0, 0.1);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -833,8 +833,6 @@ h2, h3, p, ul, a {
     line-height: 1.16;
     letter-spacing: 0.01em;
 
-    /* margin-bottom: 4px; */
-
     color: #757575;
 }
 
@@ -861,15 +859,14 @@ h2, h3, p, ul, a {
     margin-bottom: 30px;
 }
 
-
 .form-btn {
-    font-weight: 700;
-    line-height: 1.88;
-
     display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+
+    font-weight: 700;
+    line-height: 1.88;
 
     padding: 10px 52px;
     margin: 0 auto;
@@ -887,9 +884,6 @@ h2, h3, p, ul, a {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px; 
     width: 100%;
-
-    background: var(--color-white);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .name-form, 
@@ -935,10 +929,6 @@ h2, h3, p, ul, a {
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    /* margin-bottom: 20px; */
-
-    background: var(--color-white);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .form-field.form-textarea {
@@ -956,7 +946,12 @@ h2, h3, p, ul, a {
 
     border: 2px solid #212121;
     border-radius: 2px;
+}
 
+.check-svg:focus,
+.check-svg:hover {
+    border: 2px solid #212121;
+    transform: scale(1.1);
 }
 
 .form-chekbox + .check-svg {
