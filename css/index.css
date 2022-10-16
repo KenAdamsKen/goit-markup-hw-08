@@ -704,14 +704,14 @@ h2, h3, p, ul, a {
 
 .mail-btn::after {
     content: '';
-    /* display: inline-block; */
+    display: inline-block;
 
     margin-left: 10px;
     
     width: 24px;
     height: 24px;
 
-    background-image: url('../img/telegrammform.svg');
+    background-image: url('../img/svg/telegrammform.svg');
 }
 
 .mail-input {
@@ -723,13 +723,13 @@ h2, h3, p, ul, a {
     border-radius: 4px;
 
     background: #2F303A;
+    color: var(--color-white);
 }
 
 .item-footer > .join-link {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     color: var(--color-white);
-
 }
 
 .join-link {
@@ -757,7 +757,6 @@ h2, h3, p, ul, a {
 
     opacity: 1;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .backdrop.is-hidden {
@@ -800,7 +799,7 @@ h2, h3, p, ul, a {
     border-radius: 50%;
 
     border: 1px solid rgba(0, 0, 0, 0.1);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -828,11 +827,13 @@ h2, h3, p, ul, a {
 }
 
 .form-label {
+    display: inline-block;
+
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
 
-    margin-bottom: 4px;
+    /* margin-bottom: 4px; */
 
     color: #757575;
 }
@@ -853,8 +854,11 @@ h2, h3, p, ul, a {
 .form-field.checkbox {
     display: flex;
     flex-direction: row;
-    margin-bottom: 30px;
     align-items: center;
+    gap: 8px;
+
+    padding-left: 14px;
+    margin-bottom: 30px;
 }
 
 
@@ -878,10 +882,14 @@ h2, h3, p, ul, a {
 }
 
 .input {
-    height: 40px;
+    padding: 10px 0;
+    padding-left: 35px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px; 
     width: 100%;
+
+    background: var(--color-white);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .name-form, 
@@ -890,8 +898,8 @@ h2, h3, p, ul, a {
                 fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-
+.textarea:hover,
+.textarea:focus,
 .name-form:hover, 
 .name-form:focus, 
 .name-form:hover + .name-svg, 
@@ -903,6 +911,7 @@ h2, h3, p, ul, a {
 
 .name-svg {
     position: absolute;
+    display: inline-block;
     top: 50%;
     left: 15px;
     transform: translateY(-50%);
@@ -927,4 +936,36 @@ h2, h3, p, ul, a {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     /* margin-bottom: 20px; */
+
+    background: var(--color-white);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
+
+.form-field.form-textarea {
+    margin-bottom: 20px;
+}
+
+.form-chekbox {
+    appearance: none;
+    position: absolute;
+}
+
+.check-svg {
+    width: 16px;
+    height: 15px;
+
+    border: 2px solid #212121;
+    border-radius: 2px;
+
+}
+
+.form-chekbox + .check-svg {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-chekbox:checked + .check-svg {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+

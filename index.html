@@ -449,10 +449,10 @@
 				</svg>
 			</button>
 
-			<div class="form-wrapper">
-				<h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
-				<form class="form">
 
+			<h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
+			<form class="form">
+				<div class="form-wrapper">
 					<div class="form-field">
 						<label for="name" class="form-label">
 							Ім'я
@@ -489,7 +489,7 @@
 						</div>
 					</div>
 
-					<div class="form-field">
+					<div class="form-field form-textarea">
 						<label for="text" class="form-label">
 							Коментар
 						</label>
@@ -497,6 +497,9 @@
 					</div>
 					<div class="form-field checkbox">
 						<input type="checkbox" name="textarea" id="box" class="form-chekbox">
+						<svg class="check-svg icon">
+							<use href="./img/sprite2.svg#icon-check"></use>
+						</svg>
 
 						<label for="box" class="form-label check">
 							Погоджуюся з розсилкою та приймаю <span class="form-policy"><a href="">Умови
@@ -504,8 +507,9 @@
 						</label>
 					</div>
 					<button type="submit" class="form-btn">Відправити</button>
-				</form>
-			</div>
+				</div>
+			</form>
+
 		</div>
 	</div>
 
