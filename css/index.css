@@ -512,7 +512,7 @@ h2, h3, p, ul, a {
 }
 
 
-/*=========================================== Вторая страничка Портфолио ========================================*/
+/*========= Вторая страничка Портфолио ============*/
 
 .portfolio {
     padding: 94px 0;
@@ -534,8 +534,7 @@ h2, h3, p, ul, a {
     background-color: var(--portfolio-btn-color);
     color: var(--secondary-title-text);
 
-    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-group .btn:hover,
@@ -641,7 +640,6 @@ h2, h3, p, ul, a {
     letter-spacing: 0.03em;
 }
 
-
 .footer-social {
     display: inline-flex;
     gap: 10px;
@@ -688,7 +686,7 @@ h2, h3, p, ul, a {
 
     display: flex;
     align-items: center;
-    /* text-align: center; */
+    text-align: center;
     letter-spacing: 0.06em;
 
     padding: 10px 28px;
