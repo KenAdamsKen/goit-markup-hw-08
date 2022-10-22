@@ -77,30 +77,30 @@ h2, h3, p, ul, a {
     border-bottom: 1px solid #ECECEC;
 }
 
-.header-wrapper {
+.header__wrapper {
     display: flex;
     align-items: center;
 }
 
-.header-nav {
+.header__nav {
     display: flex;
     align-items: center;
 }
 
 /* Лого */
 
-.header-logo span,
-.footer-logo span {
+.header__logo span,
+.footer__logo span {
     color: var(--accent-color);
 }
 
-.header-logo:focus,
+.header__logo:focus,
 .footer-logo:focus {
     color: var(--accent-color);
     outline: var(--accent-color);
 }
 
-.header-logo,
+.header__logo,
 .footer-logo {
     display: inline-block;
     margin-right: 94px;
@@ -116,22 +116,22 @@ h2, h3, p, ul, a {
 
 /* Навигация */
 
-.header-item:not(:last-child) {
+.header__item:not(:last-child) {
     font-weight: 500;
     margin-right: 50px;
 }
 
-.header-item {
+.header__item {
     position: relative;
 }
 
-.header-list {
+.header__list {
     display: flex;
     align-items: center;
 }
 
-.header-link,
-.adress-nav {
+.header__link,
+.adress__nav {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -146,8 +146,8 @@ h2, h3, p, ul, a {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-link:hover,
-.header-link:focus,
+.header__link:hover,
+.header__link:focus,
 .footer-link.contakt:hover, 
 .footer-link.contakt:focus,
 .footer-link:hover, 
@@ -161,7 +161,7 @@ h2, h3, p, ul, a {
 
 /* Телефон имейл */
 
-.adress-nav {
+.adress__nav {
     color: var(--primary-text-color);
     display: flex;
     margin-left: auto;
