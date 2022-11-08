@@ -12,7 +12,7 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 
-    background: var(--color-white);
+    background: $color-white;
 
 }
 
@@ -31,7 +31,7 @@
     text-align: center;
     letter-spacing: 0.03em;
 
-    color: var(--secondary-title-text);
+    color: $secondary-title-text;
 }
 
 .team__subtxt {
@@ -42,7 +42,7 @@
     text-align: center;
     letter-spacing: 0.03em;
 
-    color: var(--primary-text-color);
+    color: $primary-text-color;
 }
 
 .team-social__list {
@@ -62,14 +62,14 @@
     border-radius: 50%;
     background-position: center;
 
-    color: var(--social-link-color);
+    color: $social-link-color;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
-        color: var(--color-white);
-        background-color: var(--accent-color);
-        outline: var(--accent-color);
+        color: $color-white;
+        background-color: $accent-color;
+        outline: $accent-color;
     }
 }
