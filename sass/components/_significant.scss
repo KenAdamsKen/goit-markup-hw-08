@@ -1,0 +1,38 @@
+.significant {
+    display: flex;
+    gap: 30px;
+}
+
+.significant__thumb {
+    display: flex;
+    background-color: var(--portfolio-btn-color);
+    justify-content: center;
+    margin-bottom: 30px;
+    height: 120px;
+}
+
+.significant__list {
+    flex-basis: calc(100% - 90px / 4);
+}
+
+.significant__title {
+    margin: 0;
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--secondary-title-text);
+}
+
+.significant__subtxt {
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+

@@ -65,7 +65,7 @@ h2, h3, p, ul, a {
     padding: 0;
     text-decoration: none;
 }
-
+/* 16:45 */
 .header {
     position: fixed;
     width: 100%;
@@ -278,7 +278,6 @@ h2, h3, p, ul, a {
 
 .section {
     padding: 94px 0;
-
 }
 
 .section__title {
