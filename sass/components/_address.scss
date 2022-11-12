@@ -40,12 +40,12 @@
 
     &:hover,
     &:focus {
-        color: accent-color;
-        outline: accent-color;
+        color: $accent-color;
+        outline: $accent-color;
     }
 
     &--current {
-        color: accent-color;
+        color: $accent-color;
     }
 
     &--current::after {
@@ -58,6 +58,6 @@
     
         border-radius: 2px;
     
-        background-color: accent-color;
+        background-color: $accent-color;
     }
 }

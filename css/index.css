@@ -156,7 +156,6 @@ h2, h3, p, ul, a {
 .adress__link:focus {
     color: var(--accent-color);
     outline: var(--accent-color);
-
 }
 
 /* Телефон имейл */

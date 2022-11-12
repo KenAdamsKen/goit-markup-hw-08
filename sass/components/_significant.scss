@@ -5,7 +5,7 @@
 
 .significant__thumb {
     display: flex;
-    background-color: var(--portfolio-btn-color);
+    background-color: $portfolio-btn-color;
     justify-content: center;
     margin-bottom: 30px;
     height: 120px;
@@ -25,7 +25,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
-    color: var(--secondary-title-text);
+    color: $secondary-title-text;
 }
 
 .significant__subtxt {

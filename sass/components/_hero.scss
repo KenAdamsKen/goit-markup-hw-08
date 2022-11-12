@@ -27,7 +27,7 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
-    color: var(--color-white);
+    color: $color-white;
 }
 
 .hero__btn {
@@ -44,8 +44,8 @@
 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-    color: var(--color-white);
-    background: #2196F3;
+    color: $color-white;
+    background: $accent-color;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -53,6 +53,6 @@
     &:focus {
         background-color: #188CE8;
         cursor: pointer;
-        outline: var(--accent-color);
+        outline: $accent-color;
     }
 }
