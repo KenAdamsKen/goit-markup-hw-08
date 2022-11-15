@@ -1,23 +1,48 @@
 .adress__nav {
     color: $primary-text-color;
-    display: flex;
-    margin-left: auto;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    // display: flex;
+    // margin-left: auto;
+    // padding-top: 32px;
+    // padding-bottom: 32px;
 
+    // font-weight: 500;
+    // font-size: 14px;
+    // line-height: 1.14;
+    // letter-spacing: 0.02em;
+
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: column-reverse;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 34px;
+    line-height: 1.17;
+
+
     letter-spacing: 0.02em;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (max-width: 768px) {
+
+
+        color: $accent-color;
+
+        .adress__icon-post {
+            display: none;
+        }
+        
+        .adress__icon-phone {
+            display: none;
+
+        }
+    }
 }
 
-.adress__icon {
-    margin-right: 10px;
-    vertical-align: middle;
-    fill: currentColor;
-}
+// .adress__icon {
+//     margin-right: 10px;
+//     vertical-align: middle;
+//     fill: currentColor;
+// }
 
 .adress__icon-post {
     height: 12px;
@@ -29,8 +54,27 @@
     height: 16px;
 }
 
-.adress__item:not(:first-child) {
-    margin-left: 50px;
+// .adress__item:not(:first-child) {
+//     margin-left: 50px;
+// }
+
+.adress__item {
+    a[href^="tel"] {
+        display: inline-block;
+        color: $accent-color;
+        margin-bottom: 32px;
+    }
+
+    a[href^="mail"] {
+        display: inline-block;
+        margin-bottom: 64px;
+
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.16;
+        letter-spacing: 0.02em
+    }
+    
 }
 
 .adress__link {
@@ -48,16 +92,6 @@
         color: $accent-color;
     }
 
-    &--current::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 4px;
     
-        border-radius: 2px;
-    
-        background-color: $accent-color;
-    }
+  
 }
