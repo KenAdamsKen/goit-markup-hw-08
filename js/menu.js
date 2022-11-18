@@ -2,16 +2,14 @@
     const mobileMenu = document.querySelector('.mobile-btn');
     const openMenuBtn = document.querySelector('.icon-menu');
     const closeMenuBtn = document.querySelector('.icon-close');
-
-    const afterBlueLinie = document.querySelectorAll('.header__link');
-
-    console.log(afterBlueLinie);
+    const menuWrapper = document.querySelector('.header__wrapper');
 
     const toggleMenu = () => {
       const isMenuOpen =
         mobileMenu.getAttribute('aria-expanded') === 'true' || false;
         mobileMenu.setAttribute('aria-expanded', !isMenuOpen);
       mobileMenu.classList.toggle('is-open');
+      menuWrapper.classList.toggle('is-open');
 
 
 
