@@ -59,6 +59,12 @@ body {
 
 .section {
     padding: 94px 0;
+
+    & {
+        @media screen and (max-width: 768px) {
+            padding: 60px 0;
+        }
+    }
 }
 
 .section__title {
@@ -72,6 +78,18 @@ body {
     letter-spacing: 0.03em;
 
     color: $secondary-title-text;
+
+    & {
+        @media screen and (max-width: 768px) {
+            margin-bottom: 30px;
+            font-size: 28px;
+            line-height: 1.17;
+            /* identical to box height */
+
+            text-align: center;
+            letter-spacing: 0.03em;
+        }
+    }
 }
 
 .input {
@@ -84,7 +102,11 @@ body {
 
 
 .portfolio {
-    padding: 94px 0;
+    padding: 60px 0;
+
+    @media screen and (max-width: 768px) {
+        // padding-bottom: 120px;
+    }
 }
 
 .list {

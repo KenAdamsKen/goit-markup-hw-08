@@ -7,7 +7,12 @@
 
     &__wrapper {
         // display: flex;
-        align-items: baseline;
+        // align-items: baseline;
+
+        @media screen and (max-width: 768px) {
+            // margin-right: 0;
+            text-align: center;
+        }
     }
 
     &__list {
@@ -16,13 +21,19 @@
         line-height: 1.5;
         letter-spacing: 0.03em;
     }
+
+    &__adress {
+        @media screen and (max-width: 480px) {
+            margin-bottom: 60px;
+        }
+    }
 }
 
 .footer__logo {
     @extend %logo;
 
-    margin: 0;
-    margin-right: 94px;
+    // margin: 0;
+    // margin-right: 94px;
     margin-bottom: 20px;
 
     color: $color-white;
@@ -64,12 +75,19 @@
 .join-footer__social {
     display: inline-flex;
     gap: 10px;
+    margin: 0 auto;
 }
 
 .join-footer {
     display: flex;
     flex-direction: column;
-    margin-left:  70px;
+    // margin-left:  70px;
+
+    @media screen and (max-width: 768px) {
+        // display: flex;
+        // text-align: center;
+        margin-bottom: 60px;
+    }
 }
 
 .join-footer__title,
@@ -83,6 +101,12 @@
     text-transform: uppercase;
 
     color: $color-white;
+
+    @media screen and (max-width: 768px) {
+        margin-bottom: 20px;
+        // display: block;
+    }
+
 }
 
 .join-footer__link {
@@ -97,11 +121,18 @@
 
 .mail-wrapper {
     // display: flex;
-    margin-left: auto;
+    // margin-left: auto;
 
     &__footer {
-        display: flex;
-        flex-direction: column;
+        // display: flex;
+        // flex-direction: column;
+    }
+
+    &__title {
+        @media screen and (max-width: 768px) {
+            display: inline-block;
+            margin-bottom: 20px;
+        }
     }
 
     &__input {
@@ -114,6 +145,11 @@
     
         background: #2F303A;
         color: $color-white;
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+            margin-bottom: 20px;
+        }
     }
 }
 
@@ -157,5 +193,9 @@
         background-color: #188CE8;
         cursor: pointer;
         outline: $accent-color;
+    }
+
+    @media screen and(max-width: 768px) {
+        margin: 0 auto;
     }
 }

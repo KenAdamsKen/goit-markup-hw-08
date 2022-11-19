@@ -14,6 +14,12 @@
 
     background: $color-white;
 
+    @media screen and (max-width: 768px) {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+
 }
 
 .team__img {
@@ -49,6 +55,14 @@
     display: flex;
     padding: 0 32px 30px;
     justify-content: space-between;
+
+    & {
+        @media screen and (max-width:768px) {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+    }
 }
 
 .social-link {

@@ -13,6 +13,12 @@
 
 .significant__list {
     flex-basis: calc(100% - 90px / 4);
+
+    &:not(:last-child) {
+        @media screen and (max-width: 480px) {
+            margin-bottom: 30px;
+        }
+    }
 }
 
 .significant__title {
@@ -27,7 +33,7 @@
 
     color: $secondary-title-text;
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 768px) {
         text-align: center;
     }
 }

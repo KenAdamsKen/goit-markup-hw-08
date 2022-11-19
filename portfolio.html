@@ -20,36 +20,73 @@
 <body>
 
     <!-- Header -->
-    <header class="header">
-        <div class="header__wrapper container">
-            <nav class="header__nav">
+    <header class="header ">
+        <div class="container">
+            <div class="header__mobile">
                 <a href="./index.html" class="header__logo link"><span class="header__span">Web</span>Studio</a>
-                <ul class="header__list list">
-                    <li class="header__item"><a class="header__link link" href="./index.html">Студія</a></li>
-                    <li class="header__item"><a class="header__link link header__link--current"
-                            href="./portfolio.html">Портфоліо</a></li>
-                    <li class="header__item"><a class="header__link link" href="#">Контакти</a></li>
+                <button type="button" class="mobile-btn" aria-expanded="false">
+                    <svg width="24" height="16" aria-label="Перемикач меню">
+                        <use class="icon-menu" href="./img/mobile-btn.svg#icon-menu"></use>
+                        <use class="icon-close" href="./img/mobile-btn.svg#icon-close"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="header__wrapper ">
+                <nav class="header__nav">
+
+                    <ul class="header__list list">
+                        <li class="header__item"><a class="header__link link header__link--current"
+                                href="./index.html">Студія</a></li>
+                        <li class="header__item"><a class="header__link link" href="./portfolio.html">Портфоліо</a></li>
+                        <li class="header__item"><a class="header__link link" href="#">Контакти</a></li>
+                    </ul>
+                </nav>
+
+                <ul class="adress__nav list">
+                    <li class="adress__item">
+                        <a href="mailto:info@devstudio.com" class="adress__link link">
+                            <svg class="adress__icon-post adress__icon">
+                                <use href="./img/sprite.svg#icon-post"></use>
+                            </svg>
+                            info@devstudio.com</a>
+                    </li>
+
+                    <li class="adress__item">
+                        <a href="tel:+380961111111" class="adress__link link">
+                            <svg class="adress__icon-phone adress__icon">
+                                <use href="./img/sprite.svg#icon-phone"></use>
+                            </svg>
+                            +38 096 111 11 11</a>
+                    </li>
                 </ul>
-            </nav>
 
-            <ul class="adress__nav list">
-                <li class="adress__item">
-                    <a href="mailto:info@devstudio.com" class="adress__link link">
-                        <svg class="adress__icon-post adress__icon">
-                            <use href="./img/sprite.svg#icon-post"></use>
-                        </svg>
-                        info@devstudio.com</a>
-                </li>
+                <ul class="header-social__list list">
+                    <li class="header-social__item">
+                        <a href="#" class="header-social-link " target="_blank" rel="noreferrer noopener nofollow">
+                            Instagram
+                        </a>
+                    </li>
+                    <li class="header-social__item">
+                        <a href="#" class="header-social-link " target="_blank" rel="noreferrer noopener nofollow">
+                            Twitter
+                        </a>
+                    </li>
+                    <li class="header-social__item">
+                        <a href="#" class="header-social-link " target="_blank" rel="noreferrer noopener nofollow">
+                            Facebook
+                        </a>
+                    </li>
+                    <li class="header-social__item">
+                        <a href="#" class="header-social-link " target="_blank" rel="noreferrer noopener nofollow">
+                            Linkedin
+                        </a>
+                    </li>
+                </ul>
 
-                <li class="adress__item">
-                    <a href="tel:+380961111111" class="adress__link link">
-                        <svg class="adress__icon-phone adress__icon">
-                            <use href="./img/sprite.svg#icon-phone"></use>
-                        </svg>
-                        +38 096 111 11 11</a>
-                </li>
-            </ul>
+            </div>
         </div>
+
+
     </header>
 
     <!-- Главная секция -->
@@ -69,162 +106,162 @@
 
                 <!-- Портфолио -->
 
-                <div class="container">
-                    <ul class="portfolio__list list">
-                        <li class="portfolio__item">
-                            <a href="#" class="link portfolio__link">
-                                <div class="portfolio__thumb">
-                                    <img src="./img/hw2/techcrack.jpg" alt="tech skills" width="370">
-                                    <div class="portfolio__hover-thumb">
-                                        <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
-                                            сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про
-                                            компанію чи приватну особу.</p>
-                                    </div>
+                <!-- <div class="container"> -->
+                <ul class="portfolio__list list">
+                    <li class="portfolio__item">
+                        <a href="#" class="link portfolio__link">
+                            <div class="portfolio__thumb">
+                                <img src="./img/hw2/techcrack.jpg" alt="tech skills" width="370">
+                                <div class="portfolio__hover-thumb">
+                                    <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                                        сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про
+                                        компанію чи приватну особу.</p>
                                 </div>
-                                <div class="portfolio__content">
-                                    <h2 class="portfolio__txt">Технокряк</h2>
-                                    <p class="portfolio__subtxt">Веб-сайт</p>
-                                </div>
-                            </a>
-                        </li>
+                            </div>
+                            <div class="portfolio__content">
+                                <h2 class="portfolio__txt">Технокряк</h2>
+                                <p class="portfolio__subtxt">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
 
-                        <li class="portfolio__item">
-                            <a href="#" class="link portfolio__link">
-                                <div class="portfolio__thumb">
-                                    <img src="./img/hw2/basketball.jpg" alt="basketball foto" width="370">
-                                    <div class="portfolio__hover-thumb">
-                                        <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
-                                            сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про
-                                            компанію чи приватну особу.</p>
-                                    </div>
+                    <li class="portfolio__item">
+                        <a href="#" class="link portfolio__link">
+                            <div class="portfolio__thumb">
+                                <img src="./img/hw2/basketball.jpg" alt="basketball foto" width="370">
+                                <div class="portfolio__hover-thumb">
+                                    <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                                        сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про
+                                        компанію чи приватну особу.</p>
                                 </div>
-                                <div class="portfolio__content">
-                                    <h2 class="portfolio__txt">Постер New Orlean vs Golden Star</h2>
-                                    <p class="portfolio__subtxt">Дизайн </p>
-                                </div>
-                            </a>
-                        </li>
+                            </div>
+                            <div class="portfolio__content">
+                                <h2 class="portfolio__txt">Постер New Orlean vs Golden Star</h2>
+                                <p class="portfolio__subtxt">Дизайн </p>
+                            </div>
+                        </a>
+                    </li>
 
-                        <li class="portfolio__item">
-                            <a href="#" class="link portfolio__link">
-                                <div class="portfolio__thumb">
-                                    <img src="./img/hw2/seafood.jpg" alt="seefoot logo" width="370">
-                                    <div class="portfolio__hover-thumb">
-                                        <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
-                                            сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про
-                                            компанію чи приватну особу.</p>
-                                    </div>
+                    <li class="portfolio__item">
+                        <a href="#" class="link portfolio__link">
+                            <div class="portfolio__thumb">
+                                <img src="./img/hw2/seafood.jpg" alt="seefoot logo" width="370">
+                                <div class="portfolio__hover-thumb">
+                                    <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                                        сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про
+                                        компанію чи приватну особу.</p>
                                 </div>
-                                <div class="portfolio__content">
-                                    <h2 class="portfolio__txt">Ресторан Seafood</h2>
-                                    <p class="portfolio__subtxt">Додаток</p>
-                                </div>
-                            </a>
-                        </li>
+                            </div>
+                            <div class="portfolio__content">
+                                <h2 class="portfolio__txt">Ресторан Seafood</h2>
+                                <p class="portfolio__subtxt">Додаток</p>
+                            </div>
+                        </a>
+                    </li>
 
-                        <li class="portfolio__item">
-                            <a href="#" class="link portfolio__link">
-                                <div class="portfolio__thumb">
-                                    <img src="./img/hw2/headsset.jpg" alt="headsset" width="370">
-                                    <div class="portfolio__hover-thumb">
-                                        <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
-                                            сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про
-                                            компанію чи приватну особу.</p>
-                                    </div>
+                    <li class="portfolio__item">
+                        <a href="#" class="link portfolio__link">
+                            <div class="portfolio__thumb">
+                                <img src="./img/hw2/headsset.jpg" alt="headsset" width="370">
+                                <div class="portfolio__hover-thumb">
+                                    <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                                        сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про
+                                        компанію чи приватну особу.</p>
                                 </div>
-                                <div class="portfolio__content">
-                                    <h2 class="portfolio__txt">Проєкт Prime</h2>
-                                    <p class="portfolio__subtxt">Маркетинг</p>
-                                </div>
-                            </a>
-                        </li>
+                            </div>
+                            <div class="portfolio__content">
+                                <h2 class="portfolio__txt">Проєкт Prime</h2>
+                                <p class="portfolio__subtxt">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
 
-                        <li class="portfolio__item">
-                            <a href="#" class="link portfolio__link">
-                                <div class="portfolio__thumb">
-                                    <img src="./img/hw2/boxes.jpg" alt="boxes" width="370">
-                                    <div class="portfolio__hover-thumb">
-                                        <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
-                                            сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про
-                                            компанію чи приватну особу.</p>
-                                    </div>
+                    <li class="portfolio__item">
+                        <a href="#" class="link portfolio__link">
+                            <div class="portfolio__thumb">
+                                <img src="./img/hw2/boxes.jpg" alt="boxes" width="370">
+                                <div class="portfolio__hover-thumb">
+                                    <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                                        сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про
+                                        компанію чи приватну особу.</p>
                                 </div>
-                                <div class="portfolio__content">
-                                    <h2 class="portfolio__txt">Проєкт Boxes</h2>
-                                    <p class="portfolio__subtxt">Додаток</p>
-                                </div>
-                            </a>
-                        </li>
+                            </div>
+                            <div class="portfolio__content">
+                                <h2 class="portfolio__txt">Проєкт Boxes</h2>
+                                <p class="portfolio__subtxt">Додаток</p>
+                            </div>
+                        </a>
+                    </li>
 
-                        <li class="portfolio__item">
-                            <a href="#" class="link portfolio__link">
-                                <div class="portfolio__thumb">
-                                    <img src="./img/hw2/monitor.jpg" alt="monitor" width="370">
-                                    <div class="portfolio__hover-thumb">
-                                        <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
-                                            сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про
-                                            компанію чи приватну особу.</p>
-                                    </div>
+                    <li class="portfolio__item">
+                        <a href="#" class="link portfolio__link">
+                            <div class="portfolio__thumb">
+                                <img src="./img/hw2/monitor.jpg" alt="monitor" width="370">
+                                <div class="portfolio__hover-thumb">
+                                    <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                                        сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про
+                                        компанію чи приватну особу.</p>
                                 </div>
-                                <div class="portfolio__content">
-                                    <h2 class="portfolio__txt">Inspiration has no Borders</h2>
-                                    <p class="portfolio__subtxt">Веб-сайт</p>
-                                </div>
-                            </a>
-                        </li>
+                            </div>
+                            <div class="portfolio__content">
+                                <h2 class="portfolio__txt">Inspiration has no Borders</h2>
+                                <p class="portfolio__subtxt">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
 
-                        <li class="portfolio__item">
-                            <a href="#" class="link portfolio__link">
-                                <div class="portfolio__thumb">
-                                    <img src="./img/hw2/book.jpg" alt="opened book" width="370">
-                                    <div class="portfolio__hover-thumb">
-                                        <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
-                                            сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про
-                                            компанію чи приватну особу.</p>
-                                    </div>
+                    <li class="portfolio__item">
+                        <a href="#" class="link portfolio__link">
+                            <div class="portfolio__thumb">
+                                <img src="./img/hw2/book.jpg" alt="opened book" width="370">
+                                <div class="portfolio__hover-thumb">
+                                    <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                                        сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про
+                                        компанію чи приватну особу.</p>
                                 </div>
-                                <div class="portfolio__content">
-                                    <h2 class="portfolio__txt">Видання Limited Edition</h2>
-                                    <p class="portfolio__subtxt">Дизайн</p>
-                                </div>
-                            </a>
-                        </li>
+                            </div>
+                            <div class="portfolio__content">
+                                <h2 class="portfolio__txt">Видання Limited Edition</h2>
+                                <p class="portfolio__subtxt">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
 
-                        <li class="portfolio__item">
-                            <a href="#" class="link portfolio__link">
-                                <div class="portfolio__thumb">
-                                    <img src="./img/hw2/labproject.jpg" alt="project lab" width="370">
-                                    <div class="portfolio__hover-thumb">
-                                        <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
-                                            сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про
-                                            компанію чи приватну особу.</p>
-                                    </div>
+                    <li class="portfolio__item">
+                        <a href="#" class="link portfolio__link">
+                            <div class="portfolio__thumb">
+                                <img src="./img/hw2/labproject.jpg" alt="project lab" width="370">
+                                <div class="portfolio__hover-thumb">
+                                    <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                                        сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про
+                                        компанію чи приватну особу.</p>
                                 </div>
-                                <div class="portfolio__content">
-                                    <h2 class="portfolio__txt">Проєкт LAB</h2>
-                                    <p class="portfolio__subtxt">Маркетинг</p>
-                                </div>
-                            </a>
-                        </li>
+                            </div>
+                            <div class="portfolio__content">
+                                <h2 class="portfolio__txt">Проєкт LAB</h2>
+                                <p class="portfolio__subtxt">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
 
-                        <li class="portfolio__item">
-                            <a href="#" class="link portfolio__link">
-                                <div class="portfolio__thumb">
-                                    <img src="./img/hw2/notebook.jpg" alt="notebook" width="370">
-                                    <div class="portfolio__hover-thumb">
-                                        <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
-                                            сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про
-                                            компанію чи приватну особу.</p>
-                                    </div>
+                    <li class="portfolio__item">
+                        <a href="#" class="link portfolio__link">
+                            <div class="portfolio__thumb">
+                                <img src="./img/hw2/notebook.jpg" alt="notebook" width="370">
+                                <div class="portfolio__hover-thumb">
+                                    <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                                        сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про
+                                        компанію чи приватну особу.</p>
                                 </div>
-                                <div class="portfolio__content">
-                                    <h2 class="portfolio__txt">Growing Business</h2>
-                                    <p class="portfolio__subtxt">Додаток</p>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                            </div>
+                            <div class="portfolio__content">
+                                <h2 class="portfolio__txt">Growing Business</h2>
+                                <p class="portfolio__subtxt">Додаток</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <!-- </div> -->
             </div>
         </section>
 

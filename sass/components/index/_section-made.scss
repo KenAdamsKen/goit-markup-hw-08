@@ -1,11 +1,17 @@
 
 .section-made {
     padding-top: 0;
+
+    & {
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+    }
 }
 
 .made__list {
     // display: flex;
-    gap: 30px;
+    // gap: 30px;
 }
 
 .made__item {

@@ -1,18 +1,26 @@
 .portfolio__list {
-    margin-top: calc(-1 * $portf-list-gap);
-    margin-left: calc(-1 * $portf-list-gap);
+    // margin-top: calc(-1 * $portf-list-gap);
+    // margin-left: calc(-1 * $portf-list-gap);
 
-    display: flex;
-    flex-wrap: wrap;
+    // display: flex;
+    // flex-wrap: wrap;
+
+   
 }
 
 .portfolio__item {
-    margin-top: $portf-list-gap;
-    margin-left: $portf-list-gap;
+    // margin-top: $portf-list-gap;
+    // margin-left: $portf-list-gap;
 
-    flex-basis: calc(100% / 3 - $portf-list-gap);
+    // flex-basis: calc(100% / 3 - $portf-list-gap);
 
     background: $color-white;
+
+    @media screen and (max-width: 768px) {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
 }
 
 .portfolio__content {
