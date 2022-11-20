@@ -1,6 +1,9 @@
 .form__wrapper {
-    // width: 28rem;
     margin: 0 auto;
+
+    @media screen and (min-width: 1200px) {
+        width: 28rem;
+    }
 }
 
 .backdrop__title {

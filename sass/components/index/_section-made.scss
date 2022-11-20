@@ -3,15 +3,18 @@
     padding-top: 0;
 
     & {
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 1199px) {
             display: none;
         }
     }
 }
 
 .made__list {
-    // display: flex;
-    // gap: 30px;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        gap: 30px;
+    }
+
 }
 
 .made__item {
