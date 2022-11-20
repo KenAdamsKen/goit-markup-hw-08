@@ -6,6 +6,11 @@
 .team__list {
     // display: flex;
     gap: 30px;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 .team__item {
@@ -14,10 +19,14 @@
 
     background: $color-white;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
         &:not(:last-child) {
             margin-bottom: 30px;
         }
+    }
+
+    @media screen and (min-width: 768px) {
+        flex-basis: calc( 100% / 2 - 15px);
     }
 
 }
