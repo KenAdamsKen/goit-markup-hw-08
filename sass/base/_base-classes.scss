@@ -54,6 +54,19 @@ body {
 
     @media screen and (min-width: 768px) {
         width: 768px;
+
+        &__header {
+            display: flex;
+            justify-content: space-between;
+
+            align-items: center;
+        }
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 }
 
