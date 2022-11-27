@@ -31,7 +31,6 @@
 }
 
 .significant__list {
-    // flex-basis: calc(100% - 90px / 4);
 
     &:not(:last-child) {
         @media screen and (max-width: 480px) {

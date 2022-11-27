@@ -35,7 +35,7 @@
                 <nav class="header__nav">
 
                     <ul class="header__list list">
-                        <li class="header__item"><a class="header__link" href="./index.html">Студія</a></li>
+                        <li class="header__item"><a class="header__link link" href="./index.html">Студія</a></li>
                         <li class="header__item"><a class="header__link link header__link--current"
                                 href="./portfolio.html">Портфоліо</a></li>
                         <li class="header__item"><a class="header__link link" href="#">Контакти</a></li>
@@ -106,19 +106,26 @@
 
                 <!-- Портфолио -->
 
-                <!-- <div class="container"> -->
                 <ul class="portfolio__list list">
                     <li class="portfolio__item">
                         <a href="#" class="link portfolio__link">
                             <div class="portfolio__thumb">
-                                <img src="./img/hw2/techcrack.jpg" alt="tech skills" width="370">
+                                <picture>
+                                    <source media="(max-width:767px)"
+                                        srcset="./img/hw2/techcrack-mob-min.jpg 1x, ./img/hw2/techcrack-mob@2x-min 2x" />
+                                    <source media="(max-width:1199px)"
+                                        srcset="./img/hw2/techcrack-tab-min.jpg 1x, ./img/hw2/techcrack-tab@2x-min.jpg 2x" />
+                                    <source media="(min-width:1200px)"
+                                        srcset="./img/hw2/notebook-desk-min.jpg 1x, ./img/hw2/notebook-desk@2x-min.jpg 2x" />
+                                    <img src="./img/hw2/techcrack-desk-min.jpg" alt="tech skills">
+                                </picture>
                                 <div class="portfolio__hover-thumb">
                                     <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                                         сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про
                                         компанію чи приватну особу.</p>
                                 </div>
                             </div>
-                            <div class="portfolio__content">
+                            <div class="portfolio__content baseline">
                                 <h2 class="portfolio__txt">Технокряк</h2>
                                 <p class="portfolio__subtxt">Веб-сайт</p>
                             </div>
@@ -128,7 +135,15 @@
                     <li class="portfolio__item">
                         <a href="#" class="link portfolio__link">
                             <div class="portfolio__thumb">
-                                <img src="./img/hw2/basketball.jpg" alt="basketball foto" width="370">
+                                <picture>
+                                    <source media="(max-width:767px)"
+                                        srcset="./img/hw2/basketball-mob-min.jpg 1x, ./img/hw2/basketball-mob@2x-min 2x" />
+                                    <source media="(max-width:1199px)"
+                                        srcset="./img/hw2/basketball-tab-min.jpg 1x, ./img/hw2/basketball-tab@2x-min.jpg 2x" />
+                                    <source media="(min-width:1200px)"
+                                        srcset="./img/hw2/basketball-desk-min.jpg 1x, ./img/hw2/basketball-desk@2x-min.jpg 2x" />
+                                    <img src="./img/hw2/basketball-desk-min.jpg" alt="basketball foto">
+                                </picture>
                                 <div class="portfolio__hover-thumb">
                                     <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                                         сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про
@@ -145,7 +160,15 @@
                     <li class="portfolio__item">
                         <a href="#" class="link portfolio__link">
                             <div class="portfolio__thumb">
-                                <img src="./img/hw2/seafood.jpg" alt="seefoot logo" width="370">
+                                <picture>
+                                    <source media="(max-width:767px)"
+                                        srcset="./img/hw2/seafood-mob-min.jpg 1x, ./img/hw2/seafood-mob@2x-min 2x" />
+                                    <source media="(max-width:1199px)"
+                                        srcset="./img/hw2/seafood-tab-min.jpg 1x, ./img/hw2/seafood-tab@2x-min.jpg 2x" />
+                                    <source media="(min-width:1200px)"
+                                        srcset="./img/hw2/seafood-desk-min.jpg 1x, ./img/hw2/seafood-desk@2x-min.jpg 2x" />
+                                    <img src="./img/hw2/seafood-desk-min.jpg" alt="seefoot logo">
+                                </picture>
                                 <div class="portfolio__hover-thumb">
                                     <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                                         сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про
@@ -162,7 +185,15 @@
                     <li class="portfolio__item">
                         <a href="#" class="link portfolio__link">
                             <div class="portfolio__thumb">
-                                <img src="./img/hw2/headsset.jpg" alt="headsset" width="370">
+                                <picture>
+                                    <source media="(max-width:767px)"
+                                        srcset="./img/hw2/headsset-mob-min.jpg 1x, ./img/hw2/headsset-mob@2x-min 2x" />
+                                    <source media="(max-width:1199px)"
+                                        srcset="./img/hw2/headsset-tab-min.jpg 1x, ./img/hw2/headsset-tab@2x-min.jpg 2x" />
+                                    <source media="(min-width:1200px)"
+                                        srcset="./img/hw2/headsset-desk-min.jpg 1x, ./img/hw2/headsset-desk@2x-min.jpg 2x" />
+                                    <img src="./img/hw2/headsset-desk-min.jpg" alt="headsset">
+                                </picture>
                                 <div class="portfolio__hover-thumb">
                                     <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                                         сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про
@@ -179,7 +210,17 @@
                     <li class="portfolio__item">
                         <a href="#" class="link portfolio__link">
                             <div class="portfolio__thumb">
-                                <img src="./img/hw2/boxes.jpg" alt="boxes" width="370">
+
+                                <picture>
+                                    <source media="(max-width:767px)"
+                                        srcset="./img/hw2/boxes-mob-min.jpg 1x, ./img/hw2/boxes-mob@2x-min 2x" />
+                                    <source media="(max-width:1199px)"
+                                        srcset="./img/hw2/boxes-tab-min.jpg 1x, ./img/hw2/boxes-tab@2x-min.jpg 2x" />
+                                    <source media="(min-width:1200px)"
+                                        srcset="./img/hw2/boxes-desk-min.jpg 1x, ./img/hw2/boxes-desk@2x-min.jpg 2x" />
+                                    <img src="./img/hw2/boxes-desk-min.jpg" alt="boxes">
+                                </picture>
+
                                 <div class="portfolio__hover-thumb">
                                     <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                                         сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про
@@ -196,7 +237,15 @@
                     <li class="portfolio__item">
                         <a href="#" class="link portfolio__link">
                             <div class="portfolio__thumb">
-                                <img src="./img/hw2/monitor.jpg" alt="monitor" width="370">
+                                <picture>
+                                    <source media="(max-width:767px)"
+                                        srcset="./img/hw2/monitor-mob-min.jpg 1x, ./img/hw2/monitor-mob@2x-min 2x" />
+                                    <source media="(max-width:1199px)"
+                                        srcset="./img/hw2/monitor-tab-min.jpg 1x, ./img/hw2/monitor-tab@2x-min.jpg 2x" />
+                                    <source media="(min-width:1200px)"
+                                        srcset="./img/hw2/monitor-desk-min.jpg 1x, ./img/hw2/monitor-desk@2x-min.jpg 2x" />
+                                    <img src="./img/hw2/monitor-desk-min.jpg" alt="monitor">
+                                </picture>
                                 <div class="portfolio__hover-thumb">
                                     <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                                         сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про
@@ -213,7 +262,15 @@
                     <li class="portfolio__item">
                         <a href="#" class="link portfolio__link">
                             <div class="portfolio__thumb">
-                                <img src="./img/hw2/book.jpg" alt="opened book" width="370">
+                                <picture>
+                                    <source media="(max-width:767px)"
+                                        srcset="./img/hw2/book-mob-min.jpg 1x, ./img/hw2/book-mob@2x-min 2x" />
+                                    <source media="(max-width:1199px)"
+                                        srcset="./img/hw2/book-tab-min.jpg 1x, ./img/hw2/book-tab@2x-min.jpg 2x" />
+                                    <source media="(min-width:1200px)"
+                                        srcset="./img/hw2/book-desk-min.jpg 1x, ./img/hw2/book-desk@2x-min.jpg 2x" />
+                                    <img src="./img/hw2/book-desk-min.jpg" alt="opened book">
+                                </picture>
                                 <div class="portfolio__hover-thumb">
                                     <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                                         сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про
@@ -230,7 +287,15 @@
                     <li class="portfolio__item">
                         <a href="#" class="link portfolio__link">
                             <div class="portfolio__thumb">
-                                <img src="./img/hw2/labproject.jpg" alt="project lab" width="370">
+                                <picture>
+                                    <source media="(max-width:767px)"
+                                        srcset="./img/hw2/labproject-mob-min.jpg 1x, ./img/hw2/labproject-mob@2x-min 2x" />
+                                    <source media="(max-width:1199px)"
+                                        srcset="./img/hw2/labproject-tab-min.jpg 1x, ./img/hw2/labproject-tab@2x-min.jpg 2x" />
+                                    <source media="(min-width:1200px)"
+                                        srcset="./img/hw2/labproject-desk-min.jpg 1x, ./img/hw2/labproject-desk@2x-min.jpg 2x" />
+                                    <img src="./img/hw2/labproject-desk-min.jpg" alt="project lab">
+                                </picture>
                                 <div class="portfolio__hover-thumb">
                                     <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                                         сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про
@@ -247,7 +312,16 @@
                     <li class="portfolio__item">
                         <a href="#" class="link portfolio__link">
                             <div class="portfolio__thumb">
-                                <img src="./img/hw2/notebook.jpg" alt="notebook" width="370">
+                                <picture>
+                                    <source media="(max-width:767px)"
+                                        srcset="./img/hw2/notebook-mob-min.jpg 1x, ./img/hw2/notebook-mob@2x-min 2x" />
+                                    <source media="(max-width:1199px)"
+                                        srcset="./img/hw2/notebook-tab-min.jpg 1x, ./img/hw2/notebook-tab@2x-min.jpg 2x" />
+                                    <source media="(min-width:1200px)"
+                                        srcset="./img/hw2/techcrack-desk-min.jpg 1x, ./img/hw2/techcrack-desk@2x-min.jpg 2x" />
+                                    <img src="./img/hw2/notebook.jpg" alt="notebook">
+
+                                </picture>
                                 <div class="portfolio__hover-thumb">
                                     <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                                         сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про
@@ -261,7 +335,7 @@
                         </a>
                     </li>
                 </ul>
-                <!-- </div> -->
+
             </div>
         </section>
 
