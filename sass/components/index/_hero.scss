@@ -69,12 +69,10 @@
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
 
-        & {
-            background-image: url('../../../img/hero-bg@2x.jpg');
+            & {
+                background-image: url('../../../img/hero-bg@2x.jpg');
+            }
         }
-
-  
-    }
     }
 
 }
