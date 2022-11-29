@@ -39,8 +39,7 @@
     top: 50%;
     left: 50%;
 
-    // min-width: 528px;
-    min-height: 581px;
+    min-height: 609px;
     padding: 40px 40px;
     
     background-color: $color-white;
@@ -50,9 +49,13 @@
     transform: translate(-50%, -50%) scale(1);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 480px) {
         width: 450px;
-        
+    }
+
+    @media screen and (min-width: 1200px) {
+        min-width: 528px;
+
     }
 }
 

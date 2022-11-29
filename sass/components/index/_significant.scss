@@ -35,13 +35,6 @@
 
 .significant__list {
 
-
-
-    // @media screen and (max-width: 480px) {
-    //     width: 100%;
-            
-    // }
-
     @media screen and (min-width: 768px) {
         @include calcWidth(2, 30px);
 
