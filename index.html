@@ -44,46 +44,48 @@
 					</ul>
 				</nav>
 
-				<ul class="adress__nav list">
-					<li class="adress__item">
-						<a href="mailto:info@devstudio.com" class="adress__link link">
-							<svg class="adress__icon-post adress__icon">
-								<use href="./img/sprite.svg#icon-post"></use>
-							</svg>
-							info@devstudio.com</a>
-					</li>
+				<div class="heder_mob">
+					<ul class="adress__nav list">
+						<li class="adress__item">
+							<a href="mailto:info@devstudio.com" class="adress__link link">
+								<svg class="adress__icon-post adress__icon">
+									<use href="./img/sprite.svg#icon-post"></use>
+								</svg>
+								info@devstudio.com</a>
+						</li>
 
-					<li class="adress__item">
-						<a href="tel:+380961111111" class="adress__link link">
-							<svg class="adress__icon-phone adress__icon">
-								<use href="./img/sprite.svg#icon-phone"></use>
-							</svg>
-							+38 096 111 11 11</a>
-					</li>
-				</ul>
+						<li class="adress__item">
+							<a href="tel:+380961111111" class="adress__link link">
+								<svg class="adress__icon-phone adress__icon">
+									<use href="./img/sprite.svg#icon-phone"></use>
+								</svg>
+								+38 096 111 11 11</a>
+						</li>
+					</ul>
 
-				<ul class="header-social__list list">
-					<li class="header-social__item">
-						<a href="#" class="header-social-link " target="_blank" rel="noreferrer noopener nofollow">
-							Instagram
-						</a>
-					</li>
-					<li class="header-social__item">
-						<a href="#" class="header-social-link " target="_blank" rel="noreferrer noopener nofollow">
-							Twitter
-						</a>
-					</li>
-					<li class="header-social__item">
-						<a href="#" class="header-social-link " target="_blank" rel="noreferrer noopener nofollow">
-							Facebook
-						</a>
-					</li>
-					<li class="header-social__item">
-						<a href="#" class="header-social-link " target="_blank" rel="noreferrer noopener nofollow">
-							Linkedin
-						</a>
-					</li>
-				</ul>
+					<ul class="header-social__list list">
+						<li class="header-social__item">
+							<a href="#" class="header-social-link " target="_blank" rel="noreferrer noopener nofollow">
+								Instagram
+							</a>
+						</li>
+						<li class="header-social__item">
+							<a href="#" class="header-social-link " target="_blank" rel="noreferrer noopener nofollow">
+								Twitter
+							</a>
+						</li>
+						<li class="header-social__item">
+							<a href="#" class="header-social-link " target="_blank" rel="noreferrer noopener nofollow">
+								Facebook
+							</a>
+						</li>
+						<li class="header-social__item">
+							<a href="#" class="header-social-link " target="_blank" rel="noreferrer noopener nofollow">
+								Linkedin
+							</a>
+						</li>
+					</ul>
+				</div>
 
 			</div>
 		</div>
@@ -95,8 +97,8 @@
 	<main>
 		<!--  Hero -->
 
-		<section class="hero hero__overlay">
-			<div class="container">
+		<section class="section hero">
+			<div class="hero__overlay">
 				<h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
 				<button type="button" class="hero__btn" data-modal-open>Замовити послугу</button>
 			</div>
@@ -166,19 +168,22 @@
 				<h2 class="section__title">Чим ми займаємося</h2>
 				<ul class="made__list list">
 					<li class="made__item">
-						<img src="./img/w-w-d-1.jpg" alt="пишемо код" width="370">
+						<img srcset="./img/box-1.jpg 1x, ./img/box-1-2x.jpg 2x" src="./img/box-1.jpg" alt="програмуємо"
+							width="370" />
 						<div class="thumb__made">
 							<h3 class="thumb__title">Десктопні додатки</h3>
 						</div>
 					</li>
 
-					<li class="made__item"><img src="./img/w-w-d-2.jpg" alt="читаемо код" width="370">
+					<li class="made__item"><img srcset="./img/box-2.jpg 1x, ./img/box-2-2x.jpg 2x" src="./img/box-2.jpg"
+							alt="тестуємо" width="370" />
 						<div class="thumb__made">
 							<h3 class="thumb__title">Мобільні додатки</h3>
 						</div>
 					</li>
 
-					<li class="made__item"><img src="./img/w-w-d-3.jpg" alt="аналiтика" width="370">
+					<li class="made__item"><img srcset="./img/box-3.jpg 1x, ./img/box-3-2x.jpg 2x" src="./img/box-3.jpg"
+							alt="створюємо" width="370" />
 						<div class="thumb__made">
 							<h3 class="thumb__title">Дизайнерські рішення</h3>
 						</div>
@@ -194,8 +199,14 @@
 
 				<ul class="team__list list">
 					<li class="team__item">
-						<img srcset="./img/igord.jpg 1x, ./img/igord@2x.jpg 2x" src="./img/igord.jpg"
-							alt="Ігор Дем'яненко" class="team__img" width="270">
+						<picture>
+							<source srcset="./img/img.jpg 1x, ./img/img-2x.jpg 2x" media="(min-width: 1200px)" />
+							<source srcset="./img/img-tablet.jpg 1x, ./img/img-tablet-2x.jpg 2x"
+								media="(min-width: 768px)" />
+							<source srcset="./img/img-mobile.jpg 1x, ./img/img-mobile-2x.jpg 2x"
+								media="(min-width: 320px)" />
+							<img src="./img/img-mobile.jpg" alt="Ігор Дем'яненко" width="270" />
+						</picture>
 						<h3 class="team__title">Ігор Дем'яненко</h3>
 						<p class="team__subtxt">Product Designer</p>
 						<ul class="team-social__list list">
@@ -232,8 +243,14 @@
 					</li>
 
 					<li class="team__item">
-						<img srcset="./img/olgar.jpg 1x, ./img/olgar@2x.jpg 2x" src="./img/olgar.jpg" alt="Ольга Рєпіна"
-							width="270" class="team__img">
+						<picture>
+							<source srcset="./img/img-1.jpg 1x, ./img/img-1-2x.jpg 2x" media="(min-width: 1200px)" />
+							<source srcset="./img/img-1-tablet.jpg 1x, ./img/img-1-tablet-2x.jpg 2x"
+								media="(min-width: 768px)" />
+							<source srcset="./img/img-1-mobile.jpg 1x, ./img/img-1-mobile-2x.jpg 2x"
+								media="(min-width: 320px)" />
+							<img src="./img/img-1-mobile.jpg" alt="Ольга Рєпіна" width="270" />
+						</picture>
 						<h3 class="team__title">Ольга Рєпіна</h3>
 						<p class="team__subtxt">Frontend Developer</p>
 						<ul class="team-social__list  list">
@@ -270,8 +287,14 @@
 					</li>
 
 					<li class="team__item">
-						<img srcset="./img/mukolat.jpg 1x, ./img/mukolat@2x.jpg 2x" src="./img/mukolat.jpg"
-							alt="Микола Тарасов" width="270" class="team__img">
+						<picture>
+							<source srcset="./img/img-2.jpg 1x, ./img/img-2-2x.jpg 2x" media="(min-width: 1200px)" />
+							<source srcset="./img/img-2-tablet.jpg 1x, ./img/img-2-tablet-2x.jpg 2x"
+								media="(min-width: 768px)" />
+							<source srcset="./img/img-2-mobile.jpg 1x, ./img/img-2-mobile-2x.jpg 2x"
+								media="(min-width: 320px)" />
+							<img src="./img/img-2-mobile.jpg" alt="Микола Тарасов" width="270" />
+						</picture>
 						<h3 class="team__title">Микола Тарасов</h3>
 						<p class="team__subtxt">Marketing</p>
 						<ul class="team-social__list  list">
@@ -308,8 +331,14 @@
 					</li>
 
 					<li class="team__item">
-						<img srcset="./img/misha.jpg 1x, ./img/misha@2x.jpg 2x" src="./img/misha.jpg"
-							alt="Михайло Єрмаков" width="270" class="team__img">
+						<picture>
+							<source srcset="./img/img-3.jpg 1x, ./img/img-3-2x.jpg 2x" media="(min-width: 1200px)" />
+							<source srcset="./img/img-3-tablet.jpg 1x, ./img/img-3-tablet-2x.jpg 2x"
+								media="(min-width: 768px)" />
+							<source srcset="./img/img-3-mobile.jpg 1x, ./img/img-3-mobile-2x.jpg 2x"
+								media="(min-width: 320px)" />
+							<img src="./img/img-3-mobile.jpg" alt="Михайло Єрмаков" width="270" />
+						</picture>
 						<h3 class="team__title">Михайло Єрмаков</h3>
 						<p class="team__subtxt">UI Designer</p>
 						<ul class="team-social__list  list">
@@ -355,7 +384,8 @@
 				<ul class="firms__list list">
 
 					<li class="firms__item">
-						<a href="#" class="firms__link link" target="_blank" rel="noreferrer noopener nofollow">
+						<a href="#" class="firms__link link" target="_blank" rel="noreferrer noopener nofollow"
+							width="106" height="60">
 							<svg class="firms__icon icon" width="41" height="46.7">
 								<use href="./img/sprite.svg#icon-yaco"></use>
 							</svg>

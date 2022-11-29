@@ -80,18 +80,20 @@ body {
 }
 
 .section {
-    padding: 94px 0;
 
-    
-     @media screen and (max-width: 768px) {
-         padding: 60px 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+     @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
     }
 
 }
 
 .section__title {
     margin: 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
     font-weight: 700;
     font-size: 36px;
@@ -101,17 +103,17 @@ body {
 
     color: $secondary-title-text;
 
-    & {
-        @media screen and (max-width: 768px) {
-            margin-bottom: 30px;
-            font-size: 28px;
-            line-height: 1.17;
-            /* identical to box height */
+    // & {
+    //     @media screen and (max-width: 768px) {
+    //         margin-bottom: 30px;
+    //         font-size: 28px;
+    //         line-height: 1.17;
+    //         /* identical to box height */
 
-            text-align: center;
-            letter-spacing: 0.03em;
-        }
-    }
+    //         text-align: center;
+    //         letter-spacing: 0.03em;
+    //     }
+    // }
 }
 
 .input {

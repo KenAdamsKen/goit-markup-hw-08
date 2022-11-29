@@ -1,4 +1,7 @@
 .significant {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
 
     @media screen and (max-width: 767px) {
@@ -26,30 +29,26 @@
     display: flex;
     background-color: $portfolio-btn-color;
     justify-content: center;
-    margin-bottom: 30px;
     height: 120px;
+    margin-bottom: 30px;
 }
 
 .significant__list {
 
-    &:not(:last-child) {
-        @media screen and (max-width: 480px) {
-            margin-bottom: 30px;
-        }
-    }
 
-    @media screen and (max-width: 480px) {
-        width: 100%;
+
+    // @media screen and (max-width: 480px) {
+    //     width: 100%;
             
-    }
+    // }
 
     @media screen and (min-width: 768px) {
-        width: calc(100% / 2 - 15px);
+        @include calcWidth(2, 30px);
+
     }
 
     @media screen and (min-width: 1200px) {
-        flex-basis: calc(100%  / 4);
-
+        @include calcWidth(4, 30px);
     }
     
    
@@ -58,6 +57,8 @@
 .significant__title {
     margin: 0;
     margin-bottom: 10px;
+    text-align: center;
+
 
     font-weight: 700;
     font-size: 14px;
@@ -67,8 +68,8 @@
 
     color: $secondary-title-text;
 
-    @media screen and (max-width: 767px) {
-        text-align: center;
+    @media screen and (min-width: 768px) {
+        text-align:start;
     }
 }
 

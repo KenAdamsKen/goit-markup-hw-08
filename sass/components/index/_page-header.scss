@@ -16,19 +16,24 @@
         &__wrapper {
             display: none;
 
-            position: absolute;
+            position: fixed;
+
             top: 0;
             left: 0;
-            width: 100%;
-            min-height: 100vw;
+            width: 100vw;
+            height: 100vh;
     
-            padding: 40px 48px 48px;
+            // padding: 40px 48px 48px;
+            padding: 2.5rem 3rem 3rem;
     
             background-color: #fff;
         }
 
         &__wrapper.is-open {
             display: block;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         &__logo {
@@ -41,17 +46,7 @@
 
     @media screen and (max-width: 479px) {
         &__wrapper {
-            display: none;
-
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            min-height: 100vw;
-    
-            padding: 40px 15px 48px;
-    
-            background-color: #fff;
+            padding: 1.5rem 2rem 2rem;
         }
     }  
 
@@ -150,6 +145,8 @@
         line-height: 1.22;
 
         letter-spacing: 0.02em; 
+
+        
         
 
         &:not(:last-child)::after {
@@ -178,6 +175,11 @@
     letter-spacing: .02em;
 
     color: $accent-color;
+
+    @media screen and (max-width: 479px) {
+        font-size: 14px;
+        line-height: 1.15;
+    }
 }
 
 .header__nav {
@@ -185,7 +187,6 @@
     align-items: center;
    
     @media screen and (max-width: 767px) {
-        margin-bottom: 302px;
     }
 
     @media screen and (min-width: 768px) {
@@ -207,6 +208,8 @@
         margin-right: 30px;
 
     }
+
+    
 
 
 }
@@ -250,6 +253,11 @@
         }
 
        
+    }
+
+    @media screen and (max-width: 479px) {
+        font-size: 26px;
+        line-height: 1.1923076923;
     }
 
     @media screen and (min-width: 768px) {
